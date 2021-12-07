@@ -1,0 +1,196 @@
+f/* The main container */
+.nav {
+	/* Layout & positioning */
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%; /* CHANGE this if you want another width or remove it if you want the width of the container */
+	height: 33px;
+	list-style: none;
+    z-index:9998;
+
+	/* Background */
+	
+}
+
+.nav>li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+  
+  
+   background-image: url('../../../ueb.edu.vn/images/123.jpg');
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+/* The main navigation links */
+.nav>li>a {
+white-space: nowrap;
+	/* Layout & positioning */
+	display: block;
+	padding: 10px 22px;
+	line-height: 13px;
+
+	/* Typography */
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 13px;
+	color: #fff;
+	font-weight: bold;
+	
+	/* Effects */
+	-webkit-transition: background .2s;
+	-moz-transition: background .2s;
+	-o-transition: background .2s;
+	-ms-transition: background .2s;
+}
+
+li:last-child {
+  
+}
+
+/* The hover state of the navigation links */
+.nav>li>a:hover, .nav>li:hover>a {
+	background: #f58220;
+
+  
+}
+
+.nav>.dropdown>a {
+	padding-right: 25px;
+}
+
+/* The '+' sign which indicates a submenu */
+
+.nav>.dropdown>a::after {
+	 content: "";
+	 position: absolute;
+	 top: 15px;
+	 right: 13px;
+	 width: 1px;
+	 height: 5px;
+	 background: #fff;
+}
+
+.nav>.dropdown>a::before {
+	 content: "";
+	 position: absolute;
+	 top: 7px;
+	 right: 11px;
+	 width: 5px;
+	 height: 1px;
+	 background: #fff;
+}
+
+.nav>.dropdown>a:hover::after, .nav>.dropdown:hover>a::after {
+	background: transparent;
+}
+
+/* General submenu styling */
+.nav ul {
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding: 7px 0;
+	background: #fff;
+	left: -9999px;
+	border-bottom: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+	z-index:99999;
+}
+
+.nav ul li {
+	position: relative;
+	background: #fff;
+	padding: 0 9px;
+	width: 0px;
+	height: 0px;
+	-webkit-transition: height .3s, width .3s;
+	-moz-transition: height .3s, width .3s;
+	-o-transition: height .3s, width .3s;
+	-ms-transition: height .3s, width .3s;
+}
+
+/* Level 1 submenus */
+.nav>li:hover>ul {
+	left: 0px;
+}
+
+/* Level 2+ submenus */
+.nav ul ul {
+	border-top: 1px solid #d8d8d8;
+}
+
+.nav ul>li:hover>ul {
+	top: -8px;
+	left: 168px;
+}
+
+/* Expanding the submenus on hover */
+.nav li:hover>ul>li {
+	width: 190px;
+	height: 25px;
+}
+
+/* The links of the submenus */
+.nav ul li a {
+	/* Layout */
+	display: block;
+	position: relative;
+	padding: 5px 10px;
+	border-radius: 3px;
+	width: 170px;
+
+	/* Typography */
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #2e2e2e;
+
+	/* Effects */
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
+}
+
+/* The hover state of the submenu links */
+.nav ul li a:hover, .nav ul li:hover>a {
+	background: #f58220;
+	color: #fff;
+}
+
+/* The '+' sign indicating a level 2+ submenu */
+.nav ul>.dropdown>a::after {
+	 content: "";
+	 position: absolute;
+	 top: 11px;
+	 right: 8px;
+	 width: 1px;
+	 height: 5px;
+	 background: #2e2e2e;
+}
+
+.nav ul>.dropdown>a::before {
+	 content: "";
+	 position: absolute;
+	 top: 13px;
+	 right: 6px;
+	 width: 5px;
+	 height: 1px;
+	 background: #2e2e2e;
+}
+
+.nav ul>.dropdown:hover>a::after {
+	background: transparent;
+}
+.nav ul>.dropdown:hover>a::before {
+	background: #fff;
+}

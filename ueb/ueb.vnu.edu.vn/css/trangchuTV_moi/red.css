@@ -1,0 +1,35 @@
+
+/* Style Red */
+
+.bg_top_left {
+    background-image: url('../../images/Red/bg_top_left.jpg')
+}
+
+.bg_top_right {
+    background-image: url('../../images/Red/bg_top_right.jpg')
+}
+
+.banner {
+    background-image: url('../../images/Red/banner.jpg')
+}
+
+.datlamtrangchu {
+    display:block; background-image: url('../../images/Red/datlamtrangchu.jpg'); width:135px; height:22px
+}
+
+.menungang {
+    background-color: #791119;
+}
+
+.bg_bottom_left {
+    background-image: url('../../images/Red/bg_bottom_left.jpg')
+}
+
+.bg_bottom_right {
+    background-image: url('../../images/Red/bg_bottom_right.jpg')
+}
+
+.bg_menu_bottom {
+    background-image: url('../../images/Red/bg_menu_bottom.jpg')
+}
+
